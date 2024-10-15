@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Gyms - Gym Seek</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-text">Gym<span class="logo-highlight">Seek</span></span>
+                <svg class="logo-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/>
+                </svg>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#featured-gyms">Featured Gyms</a></li>
+                <li><a href="explore.html" class="active">Explore</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="explore-page">
+        <section class="search-section">
+            <h1>Find Your Perfect Gym</h1>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="city-input" placeholder="Enter your city">
+                    <ul class="city-suggestions"></ul>
+                </div>
+                <button class="search-btn">
+                    <span class="search-icon">🔍</span>
+                    Search
+                </button>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="filters">
+                <h3>Filters</h3>
+                <div class="filter-group">
+                    <label for="price-range">Price Range</label>
+                    <select id="price-range">
+                        <option value="all">All</option>
+                        <option value="budget">Budget</option>
+                        <option value="mid-range">Mid-range</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="gym-type">Gym Type</label>
+                    <select id="gym-type">
+                        <option value="all">All</option>
+                        <option value="fitness">Fitness</option>
+                        <option value="bodybuilding">Bodybuilding</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="crossfit">CrossFit</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="rating">Minimum Rating</label>
+                    <select id="rating">
+                        <option value="0">All</option>
+                        <option value="3">3+ Stars</option>
+                        <option value="4">4+ Stars</option>
+                        <option value="4.5">4.5+ Stars</option>
+                    </select>
+                </div>
+            </div>
+            <div class="gym-grid">
+                <!-- Gym cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Gym Seek</h3>
+                <p>Connecting fitness enthusiasts with top-rated gyms across Madhya Pradesh.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#featured-gyms">Featured Gyms</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">🐦</a>
+                    <a href="#" class="social-icon">📸</a>
+                    <a href="#" class="social-icon">🏋️</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gym Seek. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="shared.js"></script>
+    <script src="explore.js"></script>
+</body>
+</html>
